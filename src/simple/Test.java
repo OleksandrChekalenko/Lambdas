@@ -18,10 +18,10 @@ public class Test {
         //--------------------------------------------------------------
 
         Printer printer = string -> System.out.println(string);
-        printer.println("Hi!");
+        printer.print("Hi!");
         // ==
         Printer printer2 = System.out::println;
-        printer2.println("Hi!");
+        printer2.print("Hi!");
 
         //--------------------------------------------------------------
 
