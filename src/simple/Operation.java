@@ -1,6 +1,6 @@
 package simple;
 
-public interface Operations {
+public interface Operation {
 
     double getResult();
 }

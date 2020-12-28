@@ -4,7 +4,7 @@ public class Test {
     private static double i = 1, j = 4;
 
     public static void main(String[] args) {
-       /* Operations operations = new Operations() {
+       /* Operation operations = new Operation() {
             @Override
             public double getResult(double d1, double d2) {
                 return Double.sum(d1, d2);
@@ -12,7 +12,7 @@ public class Test {
         };
         System.out.println(operations.getResult(2.0, 2.0));
         // ==
-        Operations lambda = Double::sum;
+        Operation lambda = Double::sum;
         System.out.println(lambda.getResult(3.0, 3.0));*/
 
         //--------------------------------------------------------------
@@ -38,11 +38,11 @@ public class Test {
         //--------------------------------------------------------------
 //        double i = 1, j = 4;
 
-        Operations operations1 = () -> {
+        Operation operation1 = () -> {
             //We cannot change i in the lambda if its declare at method, only global parameters
             i = 6;
             return i + j;
         };
-        System.out.println(operations1.getResult());
+        System.out.println(operation1.getResult());
     }
 }
